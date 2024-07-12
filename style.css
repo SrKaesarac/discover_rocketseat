@@ -1,6 +1,7 @@
-header {
-  border: 2px solid black;
-  padding: 19px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,31 +16,34 @@ body {
   background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
 }
 
-h1 {
-  border: 0.5px solid;
-  color: blueviolet;
-}
-
-#paragrafo {
-  color: green;
-}
-
-.paragrafo2 {
-  color: red;
+body * {
+  font-family: "Inter", sans-serif;
 }
 
 p {
-  border: 0.1px solid;
-  margin: 19px;
-  color: aqua;
+  color: white;
 }
 
-span {
-  border: 0.1px solid black;
-  color: black;
+#container {
+  width: 360px;
+  /*
+  margin: top right bottom left
+  */
+  margin: 56px auto 0px;
 }
 
-a {
-  border: 0.1px solid;
-  margin: 19px;
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  width: 112px;
+}
+
+#profile p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  margin-top: 8px;
 }
