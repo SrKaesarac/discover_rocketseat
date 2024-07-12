@@ -1,0 +1,37 @@
+header {
+  border: 2px solid black;
+  padding: 19px;
+}
+
+body {
+  background: beige;
+}
+
+h1 {
+  border: 0.5px solid;
+  color: blueviolet;
+}
+
+#paragrafo {
+  color: green;
+}
+
+.paragrafo2 {
+  color: red;
+}
+
+p {
+  border: 0.1px solid;
+  margin: 19px;
+  color: aqua;
+}
+
+span {
+  border: 0.1px solid black;
+  color: black;
+}
+
+a {
+  border: 0.1px solid;
+  margin: 19px;
+}
