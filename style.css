@@ -20,7 +20,8 @@ body * {
   font-family: "Inter", sans-serif;
 }
 
-p {
+p,
+a {
   color: white;
 }
 
@@ -30,6 +31,11 @@ p {
   margin: top right bottom left
   */
   margin: 56px auto 0px;
+}
+
+ul,
+li {
+  list-style: none;
 }
 
 #profile {
