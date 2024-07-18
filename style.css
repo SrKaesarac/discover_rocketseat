@@ -1,7 +1,7 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -20,27 +20,39 @@ body * {
   font-family: "Inter", sans-serif;
 }
 
-p,
-a {
+p {
   color: white;
 }
 
 #container {
-  width: 360px;
   /*
   margin: top right bottom left
   */
   margin: 56px auto 0px;
+  width: 360px;
 }
 
-ul,
-li {
+ul {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
   list-style: none;
 }
 
+ul li a {
+  align-items: center;
+  border: 1px solid snow;
+  border-radius: 10px;
+  color: snow;
+  display: flex;
+  font-size: larger;
+  justify-content: center;
+  padding: 16px 24px;
+}
+
 #profile {
-  text-align: center;
   padding: 24px;
+  text-align: center;
 }
 
 #profile img {
