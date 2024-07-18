@@ -3,6 +3,19 @@
   margin: 0;
   padding: 0;
 }
+:root {
+  --text-color: snow;
+  --bg-url: url(./assets/bg-mobile.jpg);
+  --stroke-color: rgba(255, 255, 255, 0.5);
+  --surface-color: rgba(255, 255, 255, 0.1)
+}
+
+.light {
+  --text-color: black;
+  --bg-url: url(./assets/bg-mobile-light.jpg);
+  --stroke-color: rgba(0, 0, 0, 0.5);
+  --surface-color: rgba(0, 0, 0, 0.05)
+}
 
 body {
   /*
@@ -13,7 +26,7 @@ body {
   background-size: cover;*/
 
   /*Shorthand abaixo, seguindo padrão = background: color image repeat position/size*/
-  background: url(./assets/bg-mobile.jpg) no-repeat top center/cover;
+  background: var(--bg-url) no-repeat top center/cover;
 }
 
 body * {
@@ -22,7 +35,7 @@ body * {
 
 p,
 a {
-  color: white;
+  color: var(--text-color);
 }
 
 #container {
@@ -44,9 +57,10 @@ ul {
 
 ul li a {
   align-items: center;
-  border: 1px solid snow;
+  background: var(--surface-color);
+  border: 1px solid var(--stroke-color);
   border-radius: 10px;
-  color: snow;
+  color: var(--text-color);
   display: flex;
   font-weight: 500;
   justify-content: center;
@@ -57,7 +71,7 @@ ul li a {
 
 ul li a:hover {
   background: black;
-  border: 1.8px solid white;
+  border: 1.8px solid var(--stroke-color);
 }
 
 footer {
@@ -65,7 +79,7 @@ footer {
   text-align: center;
   font-size: 14px;
   font-style: italic;
-  color: beige;
+  color: var(--text-color);
 }
 
 #profile {
@@ -88,7 +102,7 @@ footer {
   display: flex;
   padding: 24px 0;
   font-size: 40px;
-  color: antiquewhite;
+  color: var(--text-color);
   justify-content: center;
 }
 
@@ -102,5 +116,5 @@ footer {
 }
 
 #socialLinks a:hover {
-  background: grey;
+  background: var(--stroke-color);
 }
